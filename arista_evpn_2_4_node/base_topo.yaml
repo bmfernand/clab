@@ -7,8 +7,8 @@ topology:
     linux:
       image: ghcr.io/hellt/network-multitool
   nodes:
-    ixp:
-      kind: bridge
+    # ixp:
+    #   kind: bridge
     spine-101:
       kind: arista_ceos
       image: ceos
