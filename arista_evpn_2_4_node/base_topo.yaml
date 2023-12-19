@@ -2,7 +2,7 @@ name: vxlan
 
 topology:
   kinds:
-    ceos:
+    arista_ceos:
       image: ceos:4.31.1F
     linux:
       image: ghcr.io/hellt/network-multitool
@@ -11,32 +11,26 @@ topology:
     #   kind: bridge
     spine-101:
       kind: arista_ceos
-      image: ceos
       mgmt-ipv4: 172.20.0.11
       # startup-config: ceos.cfg
     spine-102:
       kind: arista_ceos
-      image: ceos
       mgmt-ipv4: 172.20.0.12
       # startup-config: ceos.cfg
     leaf-1101:
       kind: arista_ceos
-      image: ceos
       mgmt-ipv4: 172.20.0.21
       # startup-config: ceos.cfg
     leaf-1102:
       kind: arista_ceos
-      image: ceos
       mgmt-ipv4: 172.20.0.22
       # startup-config: ceos.cfg
     leaf-1103:
       kind: arista_ceos
-      image: ceos
       mgmt_ipv4: 172.20.0.23
       # startup-config: ceos.cfg
     leaf-1104:
       kind: arista_ceos
-      image: ceos
       mgmt-ipv4: 172.20.0.24
       # startup-config: ceos.cfg
     h1:
