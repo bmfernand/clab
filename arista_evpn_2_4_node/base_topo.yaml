@@ -11,27 +11,27 @@ topology:
     #   kind: bridge
     spine-101:
       kind: arista_ceos
-      mgmt-ipv4: 172.20.0.11
+      # mgmt-ipv4: 172.20.0.11
       # startup-config: ceos.cfg
     spine-102:
       kind: arista_ceos
-      mgmt-ipv4: 172.20.0.12
+      # mgmt-ipv4: 172.20.0.12
       # startup-config: ceos.cfg
     leaf-1101:
       kind: arista_ceos
-      mgmt-ipv4: 172.20.0.21
+      # mgmt-ipv4: 172.20.0.21
       # startup-config: ceos.cfg
     leaf-1102:
       kind: arista_ceos
-      mgmt-ipv4: 172.20.0.22
+      # mgmt-ipv4: 172.20.0.22
       # startup-config: ceos.cfg
     leaf-1103:
       kind: arista_ceos
-      mgmt-ipv4: 172.20.0.23
+      # mgmt-ipv4: 172.20.0.23
       # startup-config: ceos.cfg
     leaf-1104:
       kind: arista_ceos
-      mgmt-ipv4: 172.20.0.24
+      # mgmt-ipv4: 172.20.0.24
       # startup-config: ceos.cfg
     h1:
       kind: linux
