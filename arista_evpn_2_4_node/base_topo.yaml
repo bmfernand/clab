@@ -2,7 +2,7 @@ name: vxlan
 
 mgmt:
   network: custom_mgmt              # management network name
-  ipv4-subnet: 172.20.20.0/24       # ipv4 range
+  ipv4-subnet: 172.20.0.0/24        # ipv4 range
 
 topology:
   kinds:
@@ -15,7 +15,7 @@ topology:
     #   kind: bridge
     spine-101:
       kind: arista_ceos
-      # mgmt-ipv4: 172.20.0.11
+      mgmt-ipv4: 172.20.0.11
       # startup-config: ceos.cfg
     spine-102:
       kind: arista_ceos
