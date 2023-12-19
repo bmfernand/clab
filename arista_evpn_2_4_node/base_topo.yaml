@@ -6,23 +6,23 @@ topology:
       kind: bridge
     spine-101:
       kind: arista_ceos
-      image: ceos:4.28.0F
+      image: ceos:4.31.1F
       # startup-config: ceos.cfg
     spine-102:
       kind: arista_ceos
-      image: ceos:4.28.0F
+      image: ceos:4.31.1F
       # startup-config: ceos.cfg
     leaf-1101:
       kind: arista_ceos
-      image: ceos:4.28.0F
+      image: ceos:4.31.1F
       # startup-config: ceos.cfg
     leaf-1102:
       kind: arista_ceos
-      image: ceos:4.28.0F
+      image: ceos:4.31.1F
       # startup-config: ceos.cfg
     leaf-1103:
       kind: arista_ceos
-      image: ceos:4.28.0F
+      image: ceos:4.31.1F
       # startup-config: ceos.cfg
 
   links:
