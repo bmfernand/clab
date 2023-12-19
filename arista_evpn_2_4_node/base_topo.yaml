@@ -11,7 +11,7 @@ topology:
       kind: bridge
     spine-101:
       kind: arista_ceos
-      image: ceos:4.28.0F
+      image: ceos
       # startup-config: ceos.cfg
     spine-102:
       kind: arista_ceos
