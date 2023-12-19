@@ -12,26 +12,32 @@ topology:
     spine-101:
       kind: arista_ceos
       image: ceos
+      mgmt_ipv4: 172.20.0.11
       # startup-config: ceos.cfg
     spine-102:
       kind: arista_ceos
       image: ceos
+      mgmt_ipv4: 172.20.0.12
       # startup-config: ceos.cfg
     leaf-1101:
       kind: arista_ceos
       image: ceos
+      mgmt_ipv4: 172.20.0.21
       # startup-config: ceos.cfg
     leaf-1102:
       kind: arista_ceos
       image: ceos
+      mgmt_ipv4: 172.20.0.22
       # startup-config: ceos.cfg
     leaf-1103:
       kind: arista_ceos
       image: ceos
+      mgmt_ipv4: 172.20.0.23
       # startup-config: ceos.cfg
     leaf-1104:
       kind: arista_ceos
       image: ceos
+      mgmt_ipv4: 172.20.0.24
       # startup-config: ceos.cfg
     h1:
       kind: linux
@@ -47,3 +53,8 @@ topology:
     - endpoints: ["leaf-1102:eth8", "spine-102:eth2"]
     - endpoints: ["leaf-1103:eth7", "spine-101:eth3"]
     - endpoints: ["leaf-1103:eth8", "spine-102:eth3"]
+    - endpoints: ["leaf-1104:eth7", "spine-101:eth4"]
+    - endpoints: ["leaf-1104:eth8", "spine-102:eth4"]
+    - endpoints: ["h1:eth1", "spine-1101:eth1"]
+    - endpoints: ["h2:eth1", "spine-1101:eth1"]
+    - endpoints: ["h3:eth1", "spine-1101:eth1"]
