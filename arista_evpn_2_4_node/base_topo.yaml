@@ -27,7 +27,7 @@ topology:
       # startup-config: ceos.cfg
     leaf-1103:
       kind: arista_ceos
-      mgmt_ipv4: 172.20.0.23
+      mgmt-ipv4: 172.20.0.23
       # startup-config: ceos.cfg
     leaf-1104:
       kind: arista_ceos
