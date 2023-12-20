@@ -20,11 +20,11 @@ topology:
     spine-102:
       kind: arista_ceos
       mgmt-ipv4: 172.20.0.12
-      # startup-config: ceos.cfg
+      startup-config: ./configs/spine-102.cfg
     leaf-1101:
       kind: arista_ceos
       mgmt-ipv4: 172.20.0.21
-      # startup-config: ceos.cfg
+      startup-config: ./configs/leaf-1101.cfg
     leaf-1102:
       kind: arista_ceos
       mgmt-ipv4: 172.20.0.22
