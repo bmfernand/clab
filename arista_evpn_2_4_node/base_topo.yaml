@@ -46,7 +46,7 @@ topology:
       kind: linux
       mgmt-ipv4: 172.20.0.101
       exec:
-        - ip address add 172.17.1.101/24 dev eth1
+        - ip address add 192.168.10.101/24 dev eth1
       #  - ip -6 address add 2002::172:17:0:1/96 dev eth1
       #  - iperf3 -s -p 5201 -D > iperf3_1.log
       #  - iperf3 -s -p 5202 -D > iperf3_2.log
@@ -55,7 +55,7 @@ topology:
       kind: linux
       mgmt-ipv4: 172.20.0.102
       exec:
-        - ip address add 172.17.2.102/24 dev eth1
+        - ip address add 192.168.10.102/24 dev eth1
       #  - ip -6 address add 2002::172:17:0:1/96 dev eth1
       #  - iperf3 -s -p 5201 -D > iperf3_1.log
       #  - iperf3 -s -p 5202 -D > iperf3_2.log
@@ -64,7 +64,16 @@ topology:
       kind: linux
       mgmt-ipv4: 172.20.0.103
       exec:
-        - ip address add 172.17.3.103/24 dev eth1
+        - ip address add 192.168.30.103/24 dev eth1
+      #  - ip -6 address add 2002::172:17:0:1/96 dev eth1
+      #  - iperf3 -s -p 5201 -D > iperf3_1.log
+      #  - iperf3 -s -p 5202 -D > iperf3_2.log
+      group: server
+    h4:
+      kind: linux
+      mgmt-ipv4: 172.20.0.104
+      exec:
+        - ip address add 192.168.40.104/24 dev eth1
       #  - ip -6 address add 2002::172:17:0:1/96 dev eth1
       #  - iperf3 -s -p 5201 -D > iperf3_1.log
       #  - iperf3 -s -p 5202 -D > iperf3_2.log
@@ -81,5 +90,6 @@ topology:
     - endpoints: ["leaf-1104:eth8", "spine-102:eth4"]
     - endpoints: ["h1:eth1", "leaf-1101:eth1"]
     - endpoints: ["h2:eth1", "leaf-1102:eth1"]
-    - endpoints: ["h3:eth1", "leaf-1104:eth1"]
+    - endpoints: ["h3:eth1", "leaf-1103:eth1"]
+    - endpoints: ["h4:eth1", "leaf-1104:eth1"]
 
