@@ -41,6 +41,12 @@ topology:
       mgmt-ipv4: 172.20.0.24
       startup-config: ./configs/leaf-1104.cfg
 
+    ### EXTERNAL ###
+    rtr-01:
+      kind: arista_ceos
+      mgmt-ipv4: 172.20.0.30
+      startup-config: ./configs/rtr-01.cfg
+
     ### CLIENTS ###
     h1:
       kind: linux
@@ -92,4 +98,6 @@ topology:
     - endpoints: ["h2:eth1", "leaf-1102:eth1"]
     - endpoints: ["h3:eth1", "leaf-1103:eth1"]
     - endpoints: ["h4:eth1", "leaf-1104:eth1"]
+    - endpoints: ["leaf-1103:eth5", "rtr-01:eth1"]
+    - endpoints: ["leaf-1104:eth5", "rtr-01:eth2"]
 
